@@ -17,6 +17,7 @@ export const todoSlice = createSlice({
             let index = action.payload
             if(index !== -1) {
                 array.splice(index, 1)
+                
                 return { items: array }
             }
         },
